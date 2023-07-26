@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: #626262;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 15px 20px;
+}
+
+
+
+.title1 {
+    padding:8px 0 50px 0;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 42px;
+    text-align: center;
+    color: #050D42;
+}
+
+.title2 {
+    padding: 8px 0;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    color: #7487C3;
+}
+
+.title2::before {
+    content: "";
+    width: 20px;
+    height: 14px;
+    margin-right: 5px;
+    display: inline-block;
+    background: url('../src/assets/img/title_icon.svg') no-repeat;
+    background-size: contain;
+}
+
+.title_text {
+    padding: 15px 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+
+    color: #626262;
+}
+
+
+
+input {
+    padding: 12px 23px;
+    margin: 5px;
+    background: #FFFFFF;
+    color: #9B9B9B;
+    border: 1px solid #E0E0E0;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.left_right {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 25px 0;
+}
+
+.left_right img {
+    max-width: 100%;
+    height: auto;
+}
+
+.person-img {
+    position: absolute;
+}
+
+
+
+/* tariffs */
+.tariffs {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.item {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 38px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding-bottom: 50px;
+}
+
+.item.item1 {
+    background: #FFFFFF;
+}
+
+.item.item1 .text {
+    color: #050D42;
+}
+.item.item1 .price {
+    color: #5FD58C;
+}
+
+.tariffs .item1 {
+    background: #fff url("../src/assets/img/tarif1.svg") center bottom no-repeat;
+    background-size: cover;
+}
+
+.tariffs .item2 {
+    background: #607FE1 url("../src/assets/img/tarif2.png") center bottom no-repeat;
+    /* background-size: cover; */
+}
+
+.tariffs .item3 {
+    background: #2A336E url("../src/assets/img/tarif2.png") right bottom no-repeat;
+    /* background-size: cover; */
+}
+
+.item .icon {
+    padding: 40px 0 20px 0;
+}
+
+.item .text {
+    padding: 10px 0 8px 0;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #fff;
+}
+
+.item .price {
+    padding: 5px 0 50px 0;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #fff;
+}
+
+
+
+/* cabinet */
+
+.cabinet {
+    padding-top: 40px;
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    gap: 50px;
+}
+
+.person {
+    text-align: center;
+}
+
+.person .inner {
+    padding: 25px 20px;
+    border-radius: 20px;
+    background:  #FFF;
+    box-shadow: 0px 0px 42px 0px rgba(0, 0, 0, 0.15);
+}
+
+.person .img {
+    margin-bottom: 10px;
+}
+
+.person .img img {
+    border-radius: 50%;
+}
+
+.person .name {
+    color: #050D42;
+    padding: 6px 0;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.person .text1 {
+    color: #2B4082;
+    padding: 4px 0;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.person .text2 {
+    color: #626262;
+    font-family: Inter;
+    font-size: 14px;
+    padding: 5px 0;
+}
+
+.person .action {
+    padding: 10px 0 20px 0;
+}
+
+.person .bottom {
+    padding: 10px 0;
+    border-top: 1px solid #828282;
+}
+
+.person .bottom  .change {
+    color:  #050D42;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+}
+
+.person .bottom  .del {
+    color: #BDBDBD;
+    text-align: center;
+    font-size: 16px;
+    padding: 15px 0 10px 0;
+}
+
+.calcs {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 22px;
+}
+
+.calcs .item{
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    align-items: center;
+    
+    padding: 22px 30px;
+    border-radius: 20px;
+    background:  #FFF;
+    box-shadow: 0px 0px 42px 0px rgba(0, 0, 0, 0.15);
+}
+
+.calcs .item .name{
+    font-size: 20px;
+}
+
+.calcs .item .action{
+    
+}
+
+.calcs .item .action button{
+    padding: 12px 40px;
+    font-size: 20px;
+}
+
+.calcs .item.white {
+    background: #fff url("../src/assets/img/cab-line1.svg") center left no-repeat;
+}
+
+.calcs .item.blue-light{
+    background: #607FE1 url("../src/assets/img/cab-line2.svg") right center no-repeat;
+}
+
+.calcs .item.blue{
+    background: #2A336E url("../src/assets/img/cab-line3.svg") right center no-repeat;
+}
+
+.calcs .item.blue-light .name , 
+.calcs .item.blue .name {
+    color: #fff;
+}
+
+.calcs .item.blue-light button{
+    background: #5CCE88;
+    color: #fff;
+}
+
+
+
+/* free txt  */
+.free_txt {
+    padding: 45px 0 50px 0;
+}
+
+.free_txt .title1,
+.free_txt .title2 {
+    text-align: left;
+}
+
+.free_txt .text {
+    padding: 10px 0 35px 0;
+}
+
+.free_txt .left img {
+    max-width: 90%;
+    height: auto;
+}
+
+
+.matrix2 {
+    padding: 35px 0;
+}
+
+.matrix2 .form {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    padding: 25px 0 40px 0;
+    justify-content: space-between;
+    /* text-align: center; */
+}
+
+.matrix2 .form input {
+    width: 80%;
+}
+
+.matrix2 .form label {
+    /* text-align: left; */
+    display: block;
+    padding: 4px 0 6px 15px;
+}
+
+.form {
+
+}
+
+.form label {
+    color: #6D6D6D;
+    font-size: 15;
+    padding-left: 25px;
+    display: block;
+}
+
+.form input {
+    margin-bottom: 20px;
+}
+
+.form input{
+    width: 280px;
+}
+
+input::placeholder {
+    color: #9B9B9B;
+}
+
+.form button {
+    margin-top: 20px;
+}
+
+
+.form-gorizontal {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+
+
+
+.child-matrix {
+    color: #fff;
+    background: #050D42 url("../src/assets/img/child-section-bg.svg") center bottom no-repeat;
+    background-size: cover;
+}
+
+.child-matrix .title1, 
+.child-matrix .title2, 
+.child-matrix .title_text {
+    color: #fff;
+}
+
+
