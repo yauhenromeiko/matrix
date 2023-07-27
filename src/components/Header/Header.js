@@ -38,7 +38,9 @@ export const Header = ({ header, curLang, changeLang, ...restProps}) => {
                 </span>
             </div>
             <div>
-                <Button value={lang.buy[curLang]}/>
+                <Button value={lang.buy[curLang]} onClick={()=>{
+                    window.location.href = "#"+"tariffs";
+                }}/>
             </div>
         </div>
         {header === 'big' && (
@@ -52,8 +54,20 @@ export const Header = ({ header, curLang, changeLang, ...restProps}) => {
                 <div className="txt2">{lang.freeCalc[curLang]}</div>
                 <div className="txt3">{lang.fateMatricesOnline[curLang]}</div>
                 <div className="actions">
-                    <Button appearance='green'  value={lang.calculateMatrixOnline[curLang]} />
-                    <Button appearance='green'  value={lang.calculateCompatibility[curLang]} />
+                    <Button 
+                        appearance='green'  
+                        value={lang.calculateMatrixOnline[curLang]} 
+                        onClick={()=>{
+                            window.location.href = "#"+"matrix-fate";
+                        }
+                    }/>
+                    <Button 
+                        appearance='green'  
+                        value={lang.calculateCompatibility[curLang]} 
+                        onClick={()=>{
+                            window.location.href = "#"+"matrix-compatibility";
+                        }}
+                    />
                 </div>
             </div>
         )}

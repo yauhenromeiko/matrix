@@ -6,7 +6,7 @@ import {lang} from "../../lang/lang";
 export const CompatibilityMatrix = ({...restProps}) => {
     const curLang = restProps.curLang;
     return(
-        <div className="calc">
+        <div className="calc" id="matrix-compatibility">
             <div className="container">
                 <div className="title2">
                     {lang.calculationMatrixOfFateWithDetailedTranscript[curLang]}

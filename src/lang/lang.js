@@ -79,6 +79,10 @@ export const lang = {
         ru: "Матрица судьбы",
         en: "Fate Matrix"
     },
+    freeFateMatrix: {
+        ru: "Бесплатный калькулятор Матрица судьбы",
+        en: "Free Calculator Fate Matrix"
+    },
     childMatrix: {
         ru: "Детская матрица",
         en: "Child Matrix"
@@ -92,7 +96,7 @@ export const lang = {
         en: "days"
     },
     calculationMatrixOfFateWithDetailedTranscript: {
-        ru: "Расчет Матрица судьбы с подробной расшифровкой",
+        ru: "Расчет Матрицы судьбы с подробной расшифровкой",
         en: "Calculation Matrix of fate with a detailed transcript"
     },
     freeMatrixOfFateCalculatorOnline: {

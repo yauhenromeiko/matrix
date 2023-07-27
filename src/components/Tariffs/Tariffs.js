@@ -11,7 +11,7 @@ import {lang} from "../../lang/lang";
 export const Tariffs = ({...restProps}) => {
     const curLang = restProps.curLang;
     return(
-        <div className="tariffs">
+        <div className="tariffs" id="tariffs">
         <div className="container">
             <div className="title2">
                 {lang.freeMatrixOfFateCalculatorOnline[curLang]}
@@ -30,7 +30,7 @@ export const Tariffs = ({...restProps}) => {
                     <div className="price">
                         15$
                     </div>
-                    <Button  value={lang.calculate[restProps.curLang]}/>
+                    <Button  value={lang.buy[restProps.curLang]}/>
                 </div>
                 <div className="item item2">
                     <div className="icon">
@@ -42,7 +42,7 @@ export const Tariffs = ({...restProps}) => {
                     <div className="price">
                         9$
                     </div>
-                    <Button appearance='green'  value={lang.calculate[restProps.curLang]}/>
+                    <Button appearance='green'  value={lang.buy[restProps.curLang]}/>
                 </div>
                 <div className="item item3">
                     <div className="icon">
@@ -54,7 +54,7 @@ export const Tariffs = ({...restProps}) => {
                     <div className="price">
                         5$
                     </div>
-                    <Button  value={lang.calculate[restProps.curLang]}/>
+                    <Button  value={lang.buy[restProps.curLang]}/>
                 </div>
 
             </div>
