@@ -410,3 +410,37 @@ input::placeholder {
 }
 
 
+
+
+@media only screen and (max-width: 1024px) {
+    .items {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .matrix2 .form {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .left_right {
+        grid-template-columns:1fr;
+        gap: 20px;
+    }
+
+    
+
+    .title1 {
+        font-size: 25px;
+        padding-bottom: 30px;
+    }
+
+    .cabinet {
+        grid-template-columns:1fr;
+        gap: 30px;
+    }
+
+    .langBlock {
+        text-align: center;
+    }
+}

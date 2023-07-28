@@ -121,3 +121,29 @@
 .langBlock .active {
   text-decoration: underline;
 }
+
+
+@media only screen and (max-width: 1024px) {
+  .header .top {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .header .center .img {
+    display: none;
+  }
+
+  .top .menu ul {
+    display: grid;
+    gap: 15px;
+  }
+
+  .header .txt2 {
+    font-size: 20px;
+  }
+
+  .header .txt3 {
+    font-size: 30px;
+  }
+}
