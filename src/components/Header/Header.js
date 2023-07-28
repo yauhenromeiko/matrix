@@ -61,13 +61,13 @@ export const Header = ({ header, curLang, changeLang, ...restProps}) => {
                             window.location.href = "#"+"matrix-fate";
                         }
                     }/>
-                    <Button 
+                    {/* <Button 
                         appearance='green'  
                         value={lang.calculateCompatibility[curLang]} 
                         onClick={()=>{
                             window.location.href = "#"+"matrix-compatibility";
                         }}
-                    />
+                    /> */}
                 </div>
             </div>
         )}

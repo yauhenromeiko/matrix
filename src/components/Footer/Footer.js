@@ -9,8 +9,8 @@ export const Footer = ({curLang}) => {
         <div className="footer">
             <div className="container">
                 <div className="text">
-                    <p>{lang.footerText1[curLang]}</p>
-                    <p>{lang.footerText2[curLang]}</p>
+                    {/* <p>{lang.footerText1[curLang]}</p> */}
+                    {/* <p>{lang.footerText2[curLang]}</p> */}
                     <p>{lang.footerText3[curLang]}</p>
                 </div>
             </div>

@@ -21,10 +21,14 @@ export const ChildMatrix = ({...restProps}) => {
                         {lang.freeFateMatrixCompatibilityCalculatorOnline[curLang]}
                     </div>
                     
-                    <Button appearance='blue'  value={lang.calculateMatrixOnline[curLang]} />
+                    <Button 
+                        appearance='blue'  
+                        value={lang.calculateMatrixOnline[curLang]} 
+                        onClick={()=>{window.location.href = "#"+"matrix-fate";}}
+                    />
                 </div>
                 <div className="right">
-                    <Matrix appearance={"white"} />
+                    <Matrix appearance={"white"}/>
                 </div>
             </div>
         </div>

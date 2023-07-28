@@ -32,7 +32,7 @@ export const lang = {
         en: `For all questions contact by e-mail info@numerologiny.ru`,
     },
     footerText3: {
-        ru: `© ${new Date().getFullYear()} Все права защищены. Сервис по нумерологии и матрице судьбы.`,
+        ru: `© 2022-${new Date().getFullYear()} Все права защищены. Сервис по нумерологии и матрице судьбы.`,
         en: `© ${new Date().getFullYear()} All rights reserved. Service on numerology and the matrix of fate.`,
     },
     сalculate: {
@@ -161,6 +161,16 @@ export const lang = {
     ,sex: {
         ru: "Пол",
         en: "Sex"
+    }
+    
+    ,sexF: {
+        ru: "Женский",
+        en: "Female"
+    }
+    
+    ,sexM: {
+        ru: "Мужской",
+        en: "Male"
     }
     
     ,calculateBabyMatrix: {

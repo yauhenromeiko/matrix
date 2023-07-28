@@ -6,11 +6,11 @@ import logoEn from '../../assets/img/logo.svg';
 export const Logo = ({curLang , changeUrl}) => {
     return(
         <div className="logo">
-            <img 
+            {/* <img 
                 src={curLang === 'ru' ? logoRU : logoEn} 
                 alt="" 
                 onClick={()=>{changeUrl('/')}}
-            />
+            /> */}
         </div>
     )
 }

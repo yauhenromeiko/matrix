@@ -72,6 +72,21 @@ input {
     line-height: 25px;
 }
 
+select {
+    padding: 15px 23px;
+    margin: 5px;
+    background: #FFFFFF;
+    color: #9B9B9B;
+    border: 1px solid #E0E0E0;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.option {
+    padding: 10px 12px;
+}
+
 .left_right {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -86,6 +101,7 @@ input {
 
 .person-img {
     position: absolute;
+    z-index: 2;
 }
 
 
@@ -231,11 +247,19 @@ input {
     gap: 7px;
 }
 
+.person .bottom  .change:hover {
+    cursor: pointer;
+}
+
 .person .bottom  .del {
     color: #BDBDBD;
     text-align: center;
     font-size: 16px;
     padding: 15px 0 10px 0;
+}
+
+.person .bottom  .del:hover {
+    cursor: pointer;
 }
 
 .calcs {
@@ -325,7 +349,8 @@ input {
     /* text-align: center; */
 }
 
-.matrix2 .form input {
+.matrix2 .form input,
+.matrix2 .form select {
     width: 80%;
 }
 

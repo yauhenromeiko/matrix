@@ -52,7 +52,7 @@ export const CabinetPage = ({ ...restProps}) => {
                     {lang.childMatrix[restProps.curLang]}
                 </div>
                 <div className="action">
-                    <Button value={lang.calculate[restProps.curLang]}/>
+                    <Button value={lang.calculate[restProps.curLang]} onClick={()=>{}}/>
                 </div>
             </div>
             <div className="item blue-light">
@@ -60,7 +60,7 @@ export const CabinetPage = ({ ...restProps}) => {
                     {lang.fateMatrix[restProps.curLang]}
                 </div>
                 <div className="action">
-                    <Button value={lang.calculate[restProps.curLang]}/>
+                    <Button value={lang.calculate[restProps.curLang]} onClick={()=>{}}/>
                 </div>
             </div>
             <div className="item blue">
@@ -68,7 +68,7 @@ export const CabinetPage = ({ ...restProps}) => {
                     {lang.childMatrix[restProps.curLang]}
                 </div>
                 <div className="action">
-                    <Button value={lang.calculate[restProps.curLang]}/>
+                    <Button value={lang.calculate[restProps.curLang]} onClick={()=>{}}/>
                 </div>
             </div>
             <div className="item white">
@@ -76,7 +76,7 @@ export const CabinetPage = ({ ...restProps}) => {
                     {lang.fateMatrix[restProps.curLang]}
                 </div>
                 <div className="action">
-                    <Button value={lang.calculate[restProps.curLang]}/>
+                    <Button value={lang.calculate[restProps.curLang]} onClick={()=>{}}/>
                 </div>
             </div>
             <div className="item blue-light">
@@ -84,7 +84,7 @@ export const CabinetPage = ({ ...restProps}) => {
                     {lang.fateMatrix[restProps.curLang]}
                 </div>
                 <div className="action">
-                    <Button value={lang.calculate[restProps.curLang]}/>
+                    <Button value={lang.calculate[restProps.curLang]} onClick={()=>{}}/>
                 </div>
             </div>
             <div className="item blue">
@@ -92,7 +92,7 @@ export const CabinetPage = ({ ...restProps}) => {
                     {lang.fateMatrix[restProps.curLang]}
                 </div>
                 <div className="action">
-                    <Button value={lang.calculate[restProps.curLang]}/>
+                    <Button value={lang.calculate[restProps.curLang]} onClick={()=>{}}/>
                 </div>
             </div>
 

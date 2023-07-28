@@ -32,7 +32,11 @@ export const HomeText = ({...restProps}) => {
                     {lang.text1[curLang]}
                 </div>
                 <div>
-                  <Button appearance="default" value={lang.calculateBabyMatrix[curLang]}/>
+                  <Button 
+                    appearance="default" 
+                    value={lang.calculate[curLang]} 
+                    onClick={()=>{window.location.href = "#"+"matrix-fate";}}
+                  />
                 </div>
             </div>
         </div>
