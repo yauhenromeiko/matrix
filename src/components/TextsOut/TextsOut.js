@@ -1,32 +1,32 @@
-import React from 'react';
+import React, {useState} from 'react';
 import parse from 'html-react-parser';
 
-import { Button } from '../shared/Button/Button';
-import { Menu } from '../Menu/Menu';
-import { Logo } from '../Logo/Logo';
-
-import img1 from '../../assets/img/hed-1.svg';
-import img2 from '../../assets/img/hed-2.svg';
-import img3 from '../../assets/img/img1.jpg';
-
-import {lang} from "../../lang/lang";
+import BottomIcon from '../../assets/img/arrow-bottom.svg';
 
 import './TextsOut.style.css';
 
 export const TextsOut = ({ texts = [], curLang, changeLang, ...restProps}) => {
-
     const renderTexts = (texts) =>  {
         return(
-            texts.map((item,itemIndex) => (
-                <div key={itemIndex}>
-                    <div className='subTitleOut'>
+            texts.map((item,itemIndex) => {
+                const [showText, setShowText] = useState(false)
+
+                const handleClick = () => {
+                    setShowText(!showText)
+                }
+
+                return (
+                <div key={itemIndex} className='text-out-item'>
+                    <div className='subTitleOut' onClick={handleClick}>
                             {parse(item.title) || ''}
+                            <img src={BottomIcon} alt="" className={`arrow-bottom ${showText && 'active'}`}/>
                     </div>
-                    <div className='subText'>
+                    <div className={`subText ${showText && 'active'}`}>
                             {parse(item.content) || ''}
                     </div>
                 </div>
-            ))
+            )}
+            )
         )
     }
 

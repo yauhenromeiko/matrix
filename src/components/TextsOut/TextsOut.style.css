@@ -2,11 +2,19 @@
   margin-bottom: 20px;
   padding-bottom: 20px;
   border-bottom: 1px #ccc solid;
+  color: #050D42;
+}
+
+.text-out-item {
+  border: 2px #253067 solid;
+  border-radius: 10px;
+  padding: 15px 20px;
+  margin-bottom: 15px;
 }
 
 .titleOut {
-  font-size: 40px;
-  line-height: 60px;
+  font-size: 35px;
+  line-height: 50px;
   font-weight: bold;
   padding: 30px 0 20px 0;
 }
@@ -14,9 +22,40 @@
 .subTitleOut {
   font-size: 20px;
   font-weight: bold;
-  padding: 10px 0 15px 0;
-}
-.subText {
-  font-size: 16px;
   padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.arrow-bottom {
+  transition: 0.3s;
+}
+
+.arrow-bottom:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.arrow-bottom.active {
+  transform: rotate(180deg);
+}
+
+.subText {
+  color: #626262;
+  font-family: Inter;
+  font-size: 15px;
+  line-height: 22px;
+  font-style: normal;
+  font-weight: 400;
+  height: 0;
+  transition: height 1s;
+  overflow: hidden;
+}
+
+.subText.active {
+  padding: 10px 0;
+  height: auto;
+  overflow: inherit;
 }
