@@ -26,7 +26,7 @@ export const HomeText = ({...restProps}) => {
                     {lang.calculationMatrixOfFateWithDetailedTranscript[curLang]}
                 </div>
                 <div className="title1">
-                    {lang.freeMatrixOfFateCalculatorOnline[curLang]}
+                    {lang.freeFateMatrixCompatibilityCalculatorOnline[curLang]}
                 </div>
                 <div className="text">
                     {lang.text1[curLang]}

@@ -17,8 +17,6 @@ body {
     padding: 15px 20px;
 }
 
-
-
 .title1 {
     padding:8px 0 50px 0;
     font-weight: 500;
@@ -58,8 +56,6 @@ body {
 
     color: #626262;
 }
-
-
 
 input {
     padding: 12px 23px;
@@ -103,8 +99,6 @@ select {
     position: absolute;
     z-index: 2;
 }
-
-
 
 /* tariffs */
 .tariffs {
@@ -174,10 +168,7 @@ select {
     color: #fff;
 }
 
-
-
 /* cabinet */
-
 .cabinet {
     padding-top: 40px;
     display: grid;
@@ -314,8 +305,6 @@ select {
     color: #fff;
 }
 
-
-
 /* free txt  */
 .free_txt {
     padding: 45px 0 50px 0;
@@ -334,7 +323,6 @@ select {
     max-width: 90%;
     height: auto;
 }
-
 
 .matrix2 {
     padding: 35px 0;
@@ -387,15 +375,11 @@ input::placeholder {
     margin-top: 20px;
 }
 
-
 .form-gorizontal {
     display: flex;
     justify-content: center;
     gap: 30px;
 }
-
-
-
 
 .child-matrix {
     color: #fff;
@@ -408,9 +392,6 @@ input::placeholder {
 .child-matrix .title_text {
     color: #fff;
 }
-
-
-
 
 @media only screen and (max-width: 1024px) {
     .items {
@@ -427,8 +408,6 @@ input::placeholder {
         grid-template-columns:1fr;
         gap: 20px;
     }
-
-    
 
     .title1 {
         font-size: 25px;

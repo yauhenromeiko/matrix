@@ -18,8 +18,8 @@ export const HomePage = ({...restProps}) => {
 
             <HomeText {...restProps}/>
             <Tariffs {...restProps}/>
-            {/* <CompatibilityMatrix {...restProps}/> */}
-            {/* <MatrixOfFate {...restProps}/> */}
+            <CompatibilityMatrix {...restProps}/>
+            <MatrixOfFate {...restProps}/>
             <ChildMatrix {...restProps}/>
             <MatrixBottom {...restProps}/>
             </PageContainer>

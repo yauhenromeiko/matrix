@@ -208,10 +208,10 @@ export const lang = {
         en: "Subscriptions to the Matrix of Fate"
     }
     
-    // ,buy: {
-    //     ru: "",
-    //     en: ""
-    // }
+    ,freeCalculatorOfChildrensMatrix: {
+        ru: "Бесплатный калькулятор Детской матрицы судьбы онлайн",
+        en: "Free Calculator of the Children's Matrix of Destiny online"
+    }
     
     // ,buy: {
     //     ru: "",
