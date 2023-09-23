@@ -58,7 +58,7 @@ export const Header = ({ header, curLang, changeLang, ...restProps}) => {
                         appearance='green'  
                         value={lang.calculateMatrixOnline[curLang]} 
                         onClick={()=>{
-                            window.location.href = "#"+"matrix-fate";
+                            window.location.href = "#" + "matrix-fate";
                         }
                     }/>
                     

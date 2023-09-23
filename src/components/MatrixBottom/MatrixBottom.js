@@ -11,7 +11,7 @@ import {lang} from "../../lang/lang";
 // const baseURL = "https://business-matrix.herokuapp.com/api/v2/calculate/${date}?gender=${gender}&language=${lang}&appeal=p";
 
 
-export const MatrixBottom = ({value, appearance, size="md", curLang, className, ...restProps}) => {
+export const MatrixBottom = ({value, appearance, size="md", curLang, showAll = false, className, ...restProps}) => {
     const [nameInput, setNameInput] = useState('');
     const [dateInput, setdateInput] = useState('10.07.1988');
     const [langInput, setlangInput] = useState('en');
@@ -26,8 +26,8 @@ export const MatrixBottom = ({value, appearance, size="md", curLang, className, 
     const handleClick = () => {
 
         if (dateInput.length < 7) return
-
-        const baseURL = `https://test-matrix.herokuapp.com/api/v2/calculate/${dateInput}?gender=${sexInput}&language=${curLang}&appeal=p`;
+        // &edw=1
+        const baseURL = `https://test-matrix.herokuapp.com/api/v2/calculate/${dateInput}?gender=${sexInput}&language=${curLang}&appeal=p${showAll ? '&edw=1' : ''}`;
         axios.get(baseURL).then((response) => {
             setPost(response.data);
             setCombinations(response.data.combinations);

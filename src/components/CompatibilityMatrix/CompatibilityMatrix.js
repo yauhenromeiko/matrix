@@ -8,30 +8,25 @@ import { TextsOut } from '../../components/TextsOut/TextsOut';
 
 import {lang} from "../../lang/lang";
 
-export const CompatibilityMatrix = ({...restProps}) => {
+export const CompatibilityMatrix = ({showAll = false, ...restProps}) => {
     const curLang = restProps.curLang;
 
     const [partner1Input, setPartner1Input] = useState('10.02.1988');
     const [partner2Input, setPartner2Input] = useState('20.07.1993');
-
     const [combinations, setCombinations] = useState({});
     const [texts, setTexts] = useState([]);
-
 
     const [post, setPost] = useState(null);
 
     const handleClick = () => {
 
         if (partner1Input.length < 7 || partner2Input.length < 7) return
-
-        const baseURL = `https://test-matrix.herokuapp.com/api/v2/compat?date1=${partner1Input}&date2=${partner1Input}&language=${curLang}`;
+        // &edw=1
+        const baseURL = `https://test-matrix.herokuapp.com/api/v2/compat?date1=${partner1Input}&date2=${partner1Input}&language=${curLang}${showAll ? '&edw=1' : ''}`;
         axios.get(baseURL).then((response) => {
             setPost(response.data);
             setCombinations(response.data.combinations);
             setTexts(response.data.data)
-
-            console.log(response.data)
-
         });
   
         if (!post) return null;
@@ -92,7 +87,7 @@ export const CompatibilityMatrix = ({...restProps}) => {
                 {post && (
                     <div className="container">
                         <div className="title1">
-                            Ваша совместимость:
+                            {lang.yourCompatibility[curLang]}:
                         </div>
                         <div style={{fontSize: 20, paddingBottom: 30}}>
                             <center>

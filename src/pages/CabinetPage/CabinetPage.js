@@ -2,6 +2,10 @@ import React from "react";
 
 import { PageContainer } from "../../components/PageContainer/PageContainer";
 import { Tariffs } from '../../components/Tariffs/Tariffs';
+import { ChildMatrix } from '../../components/ChildMatrix/ChildMatrix';
+import { CompatibilityMatrix } from '../../components/CompatibilityMatrix/CompatibilityMatrix';
+import { MatrixOfFate } from '../../components/MatrixOfFate/MatrixOfFate';
+import { MatrixBottom } from '../../components/MatrixBottom/MatrixBottom';
 
 import { Button } from '../../components/shared/Button/Button';
 
@@ -49,52 +53,35 @@ export const CabinetPage = ({ ...restProps}) => {
         <div className="calcs">
             <div className="item white">
                 <div className="name">
-                    {lang.childMatrix[restProps.curLang]}
+                    {lang.calculateMatrixOnline[curLang]}
                 </div>
                 <div className="action">
-                    <Button value={lang.calculate[restProps.curLang]} onClick={()=>{}}/>
+                    <Button value={lang.calculate[restProps.curLang]} onClick={()=>{
+                            window.location.href = "#" + "matrix-fate";
+                        }}/>
                 </div>
             </div>
             <div className="item blue-light">
                 <div className="name">
-                    {lang.fateMatrix[restProps.curLang]}
+                    {lang.calculateCompatibility[curLang]}
                 </div>
                 <div className="action">
-                    <Button value={lang.calculate[restProps.curLang]} onClick={()=>{}}/>
+                    <Button value={lang.calculate[restProps.curLang]} onClick={()=>{
+                            window.location.href = "#"+"matrix-compatibility";
+                        }}/>
                 </div>
             </div>
             <div className="item blue">
                 <div className="name">
-                    {lang.childMatrix[restProps.curLang]}
+                    {lang.calculateBabyMatrix[curLang]}
                 </div>
                 <div className="action">
-                    <Button value={lang.calculate[restProps.curLang]} onClick={()=>{}}/>
+                    <Button value={lang.calculate[restProps.curLang]} onClick={()=>{
+                            window.location.href = "#"+"child-matrix";
+                        }}/>
                 </div>
             </div>
-            <div className="item white">
-                <div className="name">
-                    {lang.fateMatrix[restProps.curLang]}
-                </div>
-                <div className="action">
-                    <Button value={lang.calculate[restProps.curLang]} onClick={()=>{}}/>
-                </div>
-            </div>
-            <div className="item blue-light">
-                <div className="name">
-                    {lang.fateMatrix[restProps.curLang]}
-                </div>
-                <div className="action">
-                    <Button value={lang.calculate[restProps.curLang]} onClick={()=>{}}/>
-                </div>
-            </div>
-            <div className="item blue">
-                <div className="name">
-                    {lang.fateMatrix[restProps.curLang]}
-                </div>
-                <div className="action">
-                    <Button value={lang.calculate[restProps.curLang]} onClick={()=>{}}/>
-                </div>
-            </div>
+            
 
         </div>
     </div>
@@ -102,6 +89,14 @@ export const CabinetPage = ({ ...restProps}) => {
 </div>
     
         <Tariffs {...restProps}/>
+
+        
+        <CompatibilityMatrix showAll={true} {...restProps}/>
+        <ChildMatrix showAll={true} {...restProps}/>
+        <MatrixBottom showAll={true} {...restProps}/>
+
+
+
         </PageContainer>
     </>
     )

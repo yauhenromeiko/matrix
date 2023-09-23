@@ -5,7 +5,7 @@ import BottomIcon from '../../assets/img/arrow-bottom.svg';
 
 import './TextsOut.style.css';
 
-export const TextsOut = ({ texts = [], curLang, changeLang, ...restProps}) => {
+export const TextsOut = ({ texts = [], curLang, ...restProps}) => {
     const renderTexts = (texts) =>  {
         return(
             texts.map((item,itemIndex) => {

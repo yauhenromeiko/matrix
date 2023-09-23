@@ -213,10 +213,10 @@ export const lang = {
         en: "Free Calculator of the Children's Matrix of Destiny online"
     }
     
-    // ,buy: {
-    //     ru: "",
-    //     en: ""
-    // }
+    ,yourCompatibility: {
+        ru: "Ваша совместимость",
+        en: "Your compatibility"
+    }
     
     // ,buy: {
     //     ru: "",

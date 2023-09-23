@@ -9,7 +9,7 @@ import { TextsOut } from '../../components/TextsOut/TextsOut';
 
 import {lang} from "../../lang/lang";
 
-export const ChildMatrix = ({...restProps}) => {
+export const ChildMatrix = ({showAll = false, ...restProps}) => {
     const curLang = restProps.curLang;
 
     // 
@@ -27,7 +27,7 @@ export const ChildMatrix = ({...restProps}) => {
 
         if (dateOfBirth.length < 7) return
 
-        const baseURL = `https://test-matrix.herokuapp.com/api/v2/children/calculate/${dateOfBirth}?gender=${sex}&language=${curLang}`;
+        const baseURL = `https://test-matrix.herokuapp.com/api/v2/children/calculate/${dateOfBirth}?gender=${sex}&language=${curLang}${showAll ? '&edw=1' : ''}`;
         
         axios.get(baseURL).then((response) => {
             setPost(response.data);
